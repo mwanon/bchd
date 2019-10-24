@@ -11,13 +11,13 @@ import (
 	"net"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/mempool"
+	"github.com/mwanon/bchd/peer"
+	"github.com/mwanon/bchd/txscript"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 // fixedExcessiveBlockSize should not be the default -we want to ensure it will work in all cases
@@ -106,8 +106,8 @@ func MakeConnectedPeers(inboundCfg peer.Config, outboundCfg peer.Config, index u
 	outboundCfg.TstAllowSelfConnection = true
 
 	conn1, conn2 := Pipe(
-		&SimpleAddr{net: "tcp", addr: fmt.Sprintf("10.0.0.%d:8333", index)},
-		&SimpleAddr{net: "tcp", addr: fmt.Sprintf("10.0.1.%d:8333", index)},
+		&SimpleAddr{net: "tcp", addr: fmt.Sprintf("10.0.0.%d:8456", index)},
+		&SimpleAddr{net: "tcp", addr: fmt.Sprintf("10.0.1.%d:8456", index)},
 	)
 
 	inboundPeer := peer.NewInboundPeer(&inboundCfg)

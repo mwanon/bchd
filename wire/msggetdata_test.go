@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
 )
 
 // TestGetData tests the MsgGetData API.

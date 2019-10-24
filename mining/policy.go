@@ -5,9 +5,9 @@
 package mining
 
 import (
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 const (

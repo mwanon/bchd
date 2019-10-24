@@ -7,7 +7,7 @@ To run the gRPC server on localhost:
 bchd --grpclisten=127.0.0.1
 ```
 
-By default it will run on port 8335 on mainnet (18335 on testnet and regtest). If you wish
+By default it will run on port 8455 on mainnet (18455 on testnet and regtest). If you wish
 to change the port you can do so:
 
 ```bash

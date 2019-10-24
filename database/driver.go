@@ -7,7 +7,7 @@ package database
 import (
 	"fmt"
 
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchlog"
 )
 
 // Driver defines a structure for backend drivers to use when they registered

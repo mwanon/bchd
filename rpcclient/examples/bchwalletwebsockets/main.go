@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/gcash/bchd/rpcclient"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/rpcclient"
+	"github.com/mwanon/bchutil"
 )
 
 func main() {

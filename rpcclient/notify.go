@@ -13,10 +13,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gcash/bchd/btcjson"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/btcjson"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 var (
@@ -147,7 +147,7 @@ type NotificationHandlers struct {
 	// OnRelevantTxAccepted is invoked when an unmined transaction passes
 	// the client's transaction filter.
 	//
-	// NOTE: This is a gcash extension ported from
+	// NOTE: This is a mwanon extension ported from
 	// github.com/decred/dcrrpcclient.
 	OnRelevantTxAccepted func(transaction []byte)
 

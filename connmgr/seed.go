@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/wire"
 )
 
 const (

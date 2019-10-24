@@ -10,11 +10,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/database"
-	_ "github.com/gcash/bchd/database/ffldb"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/database"
+	_ "github.com/mwanon/bchd/database/ffldb"
+	"github.com/mwanon/bchutil"
 )
 
 // This example demonstrates how to create a new chain instance and use

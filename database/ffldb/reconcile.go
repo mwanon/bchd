@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/gcash/bchd/database"
+	"github.com/mwanon/bchd/database"
 )
 
 // The serialized write cursor location format is:

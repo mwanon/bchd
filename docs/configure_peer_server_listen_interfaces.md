@@ -14,24 +14,24 @@ Command Line Examples:
 |--listen=|all interfaces on default port which is changed by `--testnet` and `--regtest` (**default**)|
 |--listen=0.0.0.0|all IPv4 interfaces on default port which is changed by `--testnet` and `--regtest`|
 |--listen=::|all IPv6 interfaces on default port which is changed by `--testnet` and `--regtest`|
-|--listen=:8333|all interfaces on port 8333|
-|--listen=0.0.0.0:8333|all IPv4 interfaces on port 8333|
-|--listen=[::]:8333|all IPv6 interfaces on port 8333|
-|--listen=127.0.0.1:8333|only IPv4 localhost on port 8333|
-|--listen=[::1]:8333|only IPv6 localhost on port 8333|
-|--listen=:8336|all interfaces on non-standard port 8336|
-|--listen=0.0.0.0:8336|all IPv4 interfaces on non-standard port 8336|
-|--listen=[::]:8336|all IPv6 interfaces on non-standard port 8336|
-|--listen=127.0.0.1:8337 --listen=[::1]:8333|IPv4 localhost on port 8337 and IPv6 localhost on port 8333|
-|--listen=:8333 --listen=:8337|all interfaces on ports 8333 and 8337|
+|--listen=:8456|all interfaces on port 8456|
+|--listen=0.0.0.0:8456|all IPv4 interfaces on port 8456|
+|--listen=[::]:8456|all IPv6 interfaces on port 8456|
+|--listen=127.0.0.1:8456|only IPv4 localhost on port 8456|
+|--listen=[::1]:8456|only IPv6 localhost on port 8456|
+|--listen=:8456|all interfaces on non-standard port 8456|
+|--listen=0.0.0.0:8456|all IPv4 interfaces on non-standard port 8456|
+|--listen=[::]:8456|all IPv6 interfaces on non-standard port 8456|
+|--listen=127.0.0.1:8457 --listen=[::1]:8456|IPv4 localhost on port 8457 and IPv6 localhost on port 8456|
+|--listen=:8456 --listen=:8457|all interfaces on ports 8456 and 8457|
 
 The following config file would configure bchd to only listen on localhost for both IPv4 and IPv6:
 
 ```text
 [Application Options]
 
-listen=127.0.0.1:8333
-listen=[::1]:8333
+listen=127.0.0.1:8456
+listen=[::1]:8456
 ```
 
 In addition, if you are starting btcd with TLS and want to make it

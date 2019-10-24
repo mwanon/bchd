@@ -1,9 +1,9 @@
 cpuminer
 ========
 
-[![Build Status](https://travis-ci.org/gcash/bchd.png?branch=master)](https://travis-ci.org/gcash/bchd)
+[![Build Status](https://travis-ci.org/mwanon/bchd.png?branch=master)](https://travis-ci.org/mwanon/bchd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/gcash/bchd/mining/cpuminer)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/mwanon/bchd/mining/cpuminer)
 =======
 
 ## Overview
@@ -16,7 +16,7 @@ now.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/gcash/bchd/mining/cpuminer
+$ go get -u github.com/mwanon/bchd/mining/cpuminer
 ```
 
 ## License

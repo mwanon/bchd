@@ -12,15 +12,15 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/fullblocktests"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	_ "github.com/gcash/bchd/database/ffldb"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/blockchain/fullblocktests"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/database"
+	_ "github.com/mwanon/bchd/database/ffldb"
+	"github.com/mwanon/bchd/txscript"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 const (

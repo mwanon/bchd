@@ -7,9 +7,9 @@ package ffldb
 import (
 	"fmt"
 
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchlog"
 )
 
 var log = bchlog.Disabled

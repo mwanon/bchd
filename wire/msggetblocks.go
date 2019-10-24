@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
 )
 
 // MaxBlockLocatorsPerMsg is the maximum number of block locator hashes allowed

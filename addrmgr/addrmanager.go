@@ -23,8 +23,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
 )
 
 // AddrManager provides a concurrency safe address manager for caching potential

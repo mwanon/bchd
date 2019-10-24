@@ -8,15 +8,15 @@ With load balancing
 ```
 upstream bchrpc {
     ip_hash; # Session persistence: make same client always connect to same server
-    server bchd01.bitcoin.cash:8335;
-    server bchd02.bitcoin.cash:8335;
+    server bchd01.bitcoin.cash:8455;
+    server bchd02.bitcoin.cash:8455;
 }
 ```
 
 Without load balancing
 ```
 upstream bchrpc {
-    server bchd01.bitcoin.cash:8335;
+    server bchd01.bitcoin.cash:8455;
 }
 ```
 

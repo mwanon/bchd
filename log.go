@@ -7,23 +7,23 @@ package main
 
 import (
 	"fmt"
-	"github.com/gcash/bchd/bchrpc"
+	"github.com/mwanon/bchd/bchrpc"
 	"os"
 	"path/filepath"
 
-	"github.com/gcash/bchd/addrmgr"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/indexers"
-	"github.com/gcash/bchd/connmgr"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/mining"
-	"github.com/gcash/bchd/mining/cpuminer"
-	"github.com/gcash/bchd/netsync"
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/txscript"
+	"github.com/mwanon/bchd/addrmgr"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/blockchain/indexers"
+	"github.com/mwanon/bchd/connmgr"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchd/mempool"
+	"github.com/mwanon/bchd/mining"
+	"github.com/mwanon/bchd/mining/cpuminer"
+	"github.com/mwanon/bchd/netsync"
+	"github.com/mwanon/bchd/peer"
+	"github.com/mwanon/bchd/txscript"
 
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchlog"
 	"github.com/jrick/logrotate/rotator"
 )
 

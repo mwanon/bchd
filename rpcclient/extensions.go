@@ -12,10 +12,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gcash/bchd/btcjson"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/btcjson"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 // FutureDebugLevelResult is a future promise to deliver the result of a
@@ -466,7 +466,7 @@ func (c *Client) VersionAsync() FutureVersionResult {
 
 // Version returns information about the server's JSON-RPC API versions.
 //
-// NOTE: This is a gcash extension ported from
+// NOTE: This is a mwanon extension ported from
 // github.com/decred/dcrrpcclient.
 func (c *Client) Version() (map[string]btcjson.VersionResult, error) {
 	return c.VersionAsync().Receive()

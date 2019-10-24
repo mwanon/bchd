@@ -1,9 +1,9 @@
 bchd
 ====
-[![Build Status](https://travis-ci.org/gcash/bchd.png?branch=master)](https://travis-ci.org/gcash/bchd)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gcash/bchd)](https://goreportcard.com/report/github.com/gcash/bchd)
+[![Build Status](https://travis-ci.org/mwanon/bchd.png?branch=master)](https://travis-ci.org/mwanon/bchd)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mwanon/bchd)](https://goreportcard.com/report/github.com/mwanon/bchd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/gcash/bchd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/mwanon/bchd)
 
 bchd is an alternative full node bitcoin cash implementation written in Go (golang).
 
@@ -12,7 +12,7 @@ and reliable blockchain server which makes it a suitable backend to serve blockc
 or to power your local wallet.
 
 bchd does not include any wallet functionality by design as it makes the codebase more modular and easy to maintain. 
-The [bchwallet](https://github.com/gcash/bchwallet) is a separate application that provides a secure Bitcoin Cash wallet 
+The [bchwallet](https://github.com/mwanon/bchwallet) is a separate application that provides a secure Bitcoin Cash wallet 
 that communicates with your running bchd instance via the API.
 
 ## Table of Contents
@@ -34,7 +34,7 @@ that communicates with your running bchd instance via the API.
 
 ### Install Pre-built Packages
 
-The easiest way to run the server is to download a pre-built binary. You can find binaries of our latest release for each operating system at the [releases page](https://github.com/gcash/bchd/releases).
+The easiest way to run the server is to download a pre-built binary. You can find binaries of our latest release for each operating system at the [releases page](https://github.com/mwanon/bchd/releases).
 
 ### Build from Source
 
@@ -46,7 +46,7 @@ If you prefer to install from source do the following:
 - Run the following commands to obtain bchd, all dependencies, and install it:
 
 ```bash
-go get github.com/gcash/bchd
+go get github.com/mwanon/bchd
 ```
 
 This will download the source code into your GOPATH and compile `bchd` and install it in your path.
@@ -55,7 +55,7 @@ For developers if you wish to place the working directory outside your GOPATH yo
 ```bash
 mkdir workspace
 cd workspace
-git clone https://github.com/gcash/bchd.git
+git clone https://github.com/mwanon/bchd.git
 cd bchd
 go install (or build or run, etc)
 ```
@@ -77,7 +77,7 @@ To start bchd with default options just run:
 ```
 
 You'll find a large number of runtime options with the help flag. All of them can also be set in a config file.
-See the [sample config file](https://github.com/gcash/bchd/blob/master/sample-bchd.conf) for an example of how to use it.
+See the [sample config file](https://github.com/mwanon/bchd/blob/master/sample-bchd.conf) for an example of how to use it.
 
 ```bash
 ./bchd --help
@@ -92,7 +92,7 @@ You can use the common json RPC interface through the `bchctl` command:
 ```
 
 Bchd separates the node and the wallet. Commands for the wallet will work when you are also running
-[bchwallet](https://github.com/gcash/bchwallet):
+[bchwallet](https://github.com/mwanon/bchwallet):
 
 ```bash
 ./bchctl -u username -P password --wallet getnewaddress
@@ -124,11 +124,11 @@ docker exec <container> bchctl <command>
 
 ## Documentation
 
-The documentation is a work-in-progress.  It is located in the [docs](https://github.com/gcash/bchd/tree/master/docs) folder.
+The documentation is a work-in-progress.  It is located in the [docs](https://github.com/mwanon/bchd/tree/master/docs) folder.
 
 ## Contributing
 
-Contributions are definitely welcome! Please read the contributing [guidelines](https://github.com/gcash/bchd/blob/master/docs/code_contribution_guidelines.md) before starting.
+Contributions are definitely welcome! Please read the contributing [guidelines](https://github.com/mwanon/bchd/blob/master/docs/code_contribution_guidelines.md) before starting.
 
 ## Security Disclosures
 

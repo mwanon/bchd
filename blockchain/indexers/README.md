@@ -1,9 +1,9 @@
 indexers
 ========
 
-[![Build Status](https://travis-ci.org/gcash/bchd.png?branch=master)](https://travis-ci.org/gcash/bchd)
+[![Build Status](https://travis-ci.org/mwanon/bchd.png?branch=master)](https://travis-ci.org/mwanon/bchd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/gcash/bchd/blockchain/indexers?status.png)](http://godoc.org/github.com/gcash/bchd/blockchain/indexers)
+[![GoDoc](https://godoc.org/github.com/mwanon/bchd/blockchain/indexers?status.png)](http://godoc.org/github.com/mwanon/bchd/blockchain/indexers)
 
 Package indexers implements optional block chain indexes.
 
@@ -23,7 +23,7 @@ via an RPC interface.
 ## Installation
 
 ```bash
-$ go get -u github.com/gcash/bchd/blockchain/indexers
+$ go get -u github.com/mwanon/bchd/blockchain/indexers
 ```
 
 ## License

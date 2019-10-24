@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchlog"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchlog"
+	"github.com/mwanon/bchutil"
 )
 
 // blockProgressLogger provides periodic logging for other services in order

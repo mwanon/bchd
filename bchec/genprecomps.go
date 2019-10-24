@@ -17,7 +17,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/gcash/bchd/bchec"
+	"github.com/mwanon/bchd/bchec"
 )
 
 func main() {

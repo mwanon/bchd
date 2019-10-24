@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
 )
 
 const (

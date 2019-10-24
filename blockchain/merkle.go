@@ -7,8 +7,8 @@ package blockchain
 import (
 	"math"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchutil"
 )
 
 // nextPowerOfTwo returns the next highest power of two from a given number if

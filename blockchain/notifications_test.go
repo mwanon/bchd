@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/gcash/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg"
 )
 
 // TestNotifications ensures that notification callbacks are fired on events.

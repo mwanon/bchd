@@ -5,7 +5,7 @@
 package connmgr
 
 import (
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchlog"
 )
 
 // log is a logger that is initialized with no output filters.  This

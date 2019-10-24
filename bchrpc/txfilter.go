@@ -3,12 +3,12 @@ package bchrpc
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/gcash/bchd/bchrpc/pb"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/bchrpc/pb"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/txscript"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 	"golang.org/x/crypto/ripemd160"
 )
 

@@ -6,13 +6,13 @@ package mining
 
 import (
 	"container/heap"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/txscript"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/txscript"
 	"math/rand"
 	"testing"
 
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchutil"
 )
 
 // TestTxFeePrioHeap ensures the priority queue for transaction fees and

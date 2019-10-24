@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"github.com/dchest/siphash"
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
 	"io"
 )
 

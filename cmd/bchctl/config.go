@@ -13,9 +13,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gcash/bchd/btcjson"
-	"github.com/gcash/bchd/version"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/btcjson"
+	"github.com/mwanon/bchd/version"
+	"github.com/mwanon/bchutil"
 	flags "github.com/jessevdk/go-flags"
 )
 
@@ -119,9 +119,9 @@ func normalizeAddress(addr string, useTestNet3, useSimNet, useWallet bool) strin
 		switch {
 		case useTestNet3:
 			if useWallet {
-				defaultPort = "18332"
+				defaultPort = "18452"
 			} else {
-				defaultPort = "18334"
+				defaultPort = "18454"
 			}
 		case useSimNet:
 			if useWallet {
@@ -131,9 +131,9 @@ func normalizeAddress(addr string, useTestNet3, useSimNet, useWallet bool) strin
 			}
 		default:
 			if useWallet {
-				defaultPort = "8332"
+				defaultPort = "8452"
 			} else {
-				defaultPort = "8334"
+				defaultPort = "8454"
 			}
 		}
 

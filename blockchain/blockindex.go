@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchd/wire"
 )
 
 // blockStatus is a bit field representing the validation state of the block.

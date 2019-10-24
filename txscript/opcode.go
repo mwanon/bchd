@@ -13,9 +13,9 @@ import (
 	"golang.org/x/crypto/ripemd160"
 	"math/bits"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/bchec"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
 	"hash"
 )
 

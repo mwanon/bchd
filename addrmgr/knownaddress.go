@@ -7,7 +7,7 @@ package addrmgr
 import (
 	"time"
 
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/wire"
 )
 
 // KnownAddress tracks information about a known network address that is used

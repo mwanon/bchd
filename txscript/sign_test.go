@@ -11,11 +11,11 @@ import (
 
 	"math/rand"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/bchec"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 type addressToKey struct {

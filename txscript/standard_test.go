@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchutil"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

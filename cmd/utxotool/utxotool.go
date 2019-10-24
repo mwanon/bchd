@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/indexers"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/limits"
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/blockchain/indexers"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchd/limits"
+	"github.com/mwanon/bchlog"
 )
 
 const (

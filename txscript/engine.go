@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/bchec"
+	"github.com/mwanon/bchd/wire"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be

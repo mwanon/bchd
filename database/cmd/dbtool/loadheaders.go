@@ -7,8 +7,8 @@ package main
 import (
 	"time"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/database"
 )
 
 // headersCmd defines the configuration options for the loadheaders command.

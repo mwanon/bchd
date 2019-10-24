@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the
@@ -29,8 +29,8 @@ type params struct {
 // to emulate the full reference implementation RPC API.
 var mainNetParams = params{
 	Params:   &chaincfg.MainNetParams,
-	rpcPort:  "8334",
-	gRRPPort: "8335",
+	rpcPort:  "8454",
+	gRRPPort: "8455",
 }
 
 // regressionNetParams contains parameters specific to the regression test
@@ -39,8 +39,8 @@ var mainNetParams = params{
 // details.
 var regressionNetParams = params{
 	Params:   &chaincfg.RegressionNetParams,
-	rpcPort:  "18334",
-	gRRPPort: "18335",
+	rpcPort:  "18454",
+	gRRPPort: "18455",
 }
 
 // testNet3Params contains parameters specific to the test network (version 3)
@@ -48,8 +48,8 @@ var regressionNetParams = params{
 // reference implementation - see the mainNetParams comment for details.
 var testNet3Params = params{
 	Params:   &chaincfg.TestNet3Params,
-	rpcPort:  "18334",
-	gRRPPort: "18335",
+	rpcPort:  "18454",
+	gRRPPort: "18455",
 }
 
 // simNetParams contains parameters specific to the simulation test network

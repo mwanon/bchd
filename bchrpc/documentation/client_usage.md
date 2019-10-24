@@ -19,7 +19,7 @@ bchd itself.
 
 The rest of this document provides short examples of how to quickly get started
 by implementing a basic client that fetches the balance of the default account
-(account 0) from a testnet3 server listening on `localhost:18335` in several
+(account 0) from a testnet3 server listening on `localhost:18455` in several
 different languages:
 
 - [Go](#go)
@@ -81,12 +81,12 @@ import (
 	"fmt"
 	"path/filepath"
 
-	pb "github.com/gcash/bchd/bchrpc/pb"
+	pb "github.com/mwanon/bchd/bchrpc/pb"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchutil"
 )
 
 var certificateFile = filepath.Join(bchutil.AppDataDir("bchd", false), "rpc.cert")
@@ -97,7 +97,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	conn, err := grpc.Dial("localhost:18332", grpc.WithTransportCredentials(creds))
+	conn, err := grpc.Dial("localhost:18452", grpc.WithTransportCredentials(creds))
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -133,7 +133,7 @@ var packageDefinition = protoLoader.loadSync(
     });
 
 var pb = grpc.loadPackageDefinition(packageDefinition).pb;
-var client = new pb.bchrpc('bchd.greyh.at:8335', grpc.credentials.createSsl());
+var client = new pb.bchrpc('bchd.greyh.at:8455', grpc.credentials.createSsl());
 
 
 // Get current state of the mempool
@@ -152,7 +152,7 @@ If connecting to a node using a self signed cert you will need to use:
 ```javascript
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
-**More Examples**: [here](https://github.com/gcash/bchd/tree/master/bchrpc/documentation/client-usage-examples/nodejs-grpc)
+**More Examples**: [here](https://github.com/mwanon/bchd/tree/master/bchrpc/documentation/client-usage-examples/nodejs-grpc)
 
 ## Python
 
@@ -178,7 +178,7 @@ import bchrpc_pb2 as pb
 import bchrpc_pb2_grpc as bchrpc
 
 def run():
-    with grpc.secure_channel('bchd.greyh.at:8335', grpc.ssl_channel_credentials()) as channel:
+    with grpc.secure_channel('bchd.greyh.at:8455', grpc.ssl_channel_credentials()) as channel:
         
         # Get MempoolInfo
         stub = bchrpc.bchrpcStub(channel)

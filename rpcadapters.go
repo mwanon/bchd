@@ -7,13 +7,13 @@ package main
 import (
 	"sync/atomic"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/netsync"
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/blockchain"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/mempool"
+	"github.com/mwanon/bchd/netsync"
+	"github.com/mwanon/bchd/peer"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 // rpcPeer provides a peer for use with the RPC server and implements the

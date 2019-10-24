@@ -11,11 +11,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/txscript"
+	"github.com/mwanon/bchd/wire"
+	"github.com/mwanon/bchutil"
 )
 
 const (
@@ -43,7 +43,7 @@ const (
 
 	// baseSubsidy is the starting subsidy amount for mined blocks.  This
 	// value is halved every SubsidyHalvingInterval blocks.
-	baseSubsidy = 50 * bchutil.SatoshiPerBitcoin
+	baseSubsidy = 1024 * bchutil.SatoshiPerBitcoin
 
 	// LegacyMaxBlockSize is the maximum number of bytes allowed in a block
 	// prior to the August 1st, 2018 UAHF hardfork
@@ -1100,9 +1100,6 @@ func (b *BlockChain) checkConnectBlock(node *blockNode, block *bchutil.Block, vi
 	// script flags.
 	greatWallActive := node.height > b.chainParams.GreatWallForkHeight
 
-	// If Graviton hardfork is active we must enforce MinimalData
-	gravitonActive := uint64(node.parent.CalcPastMedianTime().Unix()) >= b.chainParams.GravitonActivationTime
-
 	// BIP0030 added a rule to prevent blocks which contain duplicate
 	// transactions that 'overwrite' older transactions which are not fully
 	// spent.  See the documentation for checkBIP0030 for more details.
@@ -1181,14 +1178,9 @@ func (b *BlockChain) checkConnectBlock(node *blockNode, block *bchutil.Block, vi
 			txscript.ScriptVerifyCheckDataSig
 	}
 
-	// If GreatWall hardfork is active enforce Schnorr and AllowSegwitRecovery script flags.
+	// If GreatWall is enforce Schnorr and AllowSegwitRecovery script flags.
 	if greatWallActive {
 		scriptFlags |= txscript.ScriptVerifySchnorr | txscript.ScriptVerifyAllowSegwitRecovery
-	}
-
-	// If Graviton hardfork is active enforce MinimalData and SchnorrMultisig script flag.
-	if gravitonActive {
-		scriptFlags |= txscript.ScriptVerifyMinimalData | txscript.ScriptVerifySchnorrMultisig
 	}
 
 	// The number of signature operations must be less than the maximum

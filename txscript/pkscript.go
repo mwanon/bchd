@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/bchec"
+	"github.com/mwanon/bchd/chaincfg"
+	"github.com/mwanon/bchutil"
 	"golang.org/x/crypto/ripemd160"
 )
 

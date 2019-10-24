@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -234,14 +234,14 @@ type Params struct {
 var MainNetParams = Params{
 	Name:        "mainnet",
 	Net:         wire.MainNet,
-	DefaultPort: "8333",
+	DefaultPort: "8456",
 	DNSSeeds: []DNSSeed{
-		{"seed.bchd.cash", true},
-		{"seed.bitcoinabc.org", true},
-		{"seed-abc.bitcoinforks.org", true},
-		{"btccash-seeder.bitcoinunlimited.info", true},
-		{"seed.bitprim.org", true},
-		{"seed.deadalnix.me", true},
+	//	{"seed.bchd.cash", true},
+	//	{"seed.bitcoinabc.org", true},
+	//	{"seed-abc.bitcoinforks.org", true},
+	//	{"btccash-seeder.bitcoinunlimited.info", true},
+	//	{"seed.bitprim.org", true},
+	//	{"seed.deadalnix.me", true},
 	},
 
 	// Chain parameters
@@ -249,21 +249,21 @@ var MainNetParams = Params{
 	GenesisHash:   &genesisHash,
 	PowLimit:      mainPowLimit,
 	PowLimitBits:  0x1d00ffff,
-	BIP0034Height: 227931, // 000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8
-	BIP0065Height: 388381, // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-	BIP0066Height: 363725, // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+	BIP0034Height: 0, // 000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8
+	BIP0065Height: 0, // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+	BIP0066Height: 0, // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
 
-	UahfForkHeight:              478558, // 0000000000000000011865af4122fe3b144e2cbeea86142e8ff2fb4107352d43
-	DaaForkHeight:               504031, // 0000000000000000011ebf65b60d0a3de80b8175be709d653b4c1a1beeb6ab9c
-	MagneticAnonomalyForkHeight: 556766, // 00000000000000000102d94fde9bd0807a2cc7582fe85dd6349b73ce4e8d9322
-	GreatWallForkHeight:         582679, // 0000000000000000018596bdfd350a9fbc7297a62a3f510b74565d992d63d2ef
+	UahfForkHeight:              0, // 0000000000000000011865af4122fe3b144e2cbeea86142e8ff2fb4107352d43
+	DaaForkHeight:               0, // 0000000000000000011ebf65b60d0a3de80b8175be709d653b4c1a1beeb6ab9c
+	MagneticAnonomalyForkHeight: 0, // 00000000000000000102d94fde9bd0807a2cc7582fe85dd6349b73ce4e8d9322
+	GreatWallForkHeight:         0, // 0000000000000000018596bdfd350a9fbc7297a62a3f510b74565d992d63d2ef
 
-	GravitonActivationTime: 1573819200,
+	GravitonActivationTime: 0,
 
 	CoinbaseMaturity:         100,
-	SubsidyReductionInterval: 210000,
-	TargetTimespan:           time.Hour * 24 * 14, // 14 days
-	TargetTimePerBlock:       time.Minute * 10,    // 10 minutes
+	SubsidyReductionInterval: 129600, // 180 days
+	TargetTimespan:           time.Hour * 24 * 1, // 1 days
+	TargetTimePerBlock:       time.Minute * 2,    // 2 minutes
 	RetargetAdjustmentFactor: 4,                   // 25% less, 400% more
 	ReduceMinDifficulty:      false,
 	NoDifficultyAdjustment:   false,
@@ -272,49 +272,7 @@ var MainNetParams = Params{
 
 	// Checkpoints ordered from oldest to newest.
 	Checkpoints: []Checkpoint{
-		{Height: 11111, Hash: newHashFromStr("0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d")},
-		{Height: 33333, Hash: newHashFromStr("000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
-		{Height: 74000, Hash: newHashFromStr("0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
-		{Height: 105000, Hash: newHashFromStr("00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
-		{Height: 134444, Hash: newHashFromStr("00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
-		{Height: 168000, Hash: newHashFromStr("000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
-		{Height: 193000, Hash: newHashFromStr("000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
-		{Height: 210000, Hash: newHashFromStr("000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
-		{Height: 216116, Hash: newHashFromStr("00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
-		{Height: 225430, Hash: newHashFromStr("00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
-		{Height: 250000, Hash: newHashFromStr("000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
-		{Height: 267300, Hash: newHashFromStr("000000000000000a83fbd660e918f218bf37edd92b748ad940483c7c116179ac")},
-		{Height: 279000, Hash: newHashFromStr("0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
-		{Height: 300255, Hash: newHashFromStr("0000000000000000162804527c6e9b9f0563a280525f9d08c12041def0a0f3b2")},
-		{Height: 319400, Hash: newHashFromStr("000000000000000021c6052e9becade189495d1c539aa37c58917305fd15f13b")},
-		{Height: 343185, Hash: newHashFromStr("0000000000000000072b8bf361d01a6ba7d445dd024203fafc78768ed4368554")},
-		{Height: 352940, Hash: newHashFromStr("000000000000000010755df42dba556bb72be6a32f3ce0b6941ce4430152c9ff")},
-		{Height: 382320, Hash: newHashFromStr("00000000000000000a8dc6ed5b133d0eb2fd6af56203e4159789b092defd8ab2")},
-		{Height: 400000, Hash: newHashFromStr("000000000000000004ec466ce4732fe6f1ed1cddc2ed4b328fff5224276e3f6f")},
-		{Height: 430000, Hash: newHashFromStr("000000000000000001868b2bb3a285f3cc6b33ea234eb70facf4dcdf22186b87")},
-		{Height: 470000, Hash: newHashFromStr("0000000000000000006c539c722e280a0769abd510af0073430159d71e6d7589")},
-		{Height: 510000, Hash: newHashFromStr("00000000000000000367922b6457e21d591ef86b360d78a598b14c2f1f6b0e04")},
-		{Height: 552979, Hash: newHashFromStr("0000000000000000015648768ac1b788a83187d706f858919fcc5c096b76fbf2")},
-		{
-			Height:      556767,
-			Hash:        newHashFromStr("0000000000000000004626ff6e3b936941d341c5932ece4357eeccac44e6d56c"),
-			UtxoSetHash: newHashFromStr("352a96fdd4dd229ced594b6bae5c658da514eb76e9b04eb469a7effaada6a14e"),
-			UtxoSetSize: 3102076686,
-			UtxoSetSources: []string{
-				"http://localhost:8080/ipfs/QmQECm1yUgKh7oQg2syCFo5BLvhFSSH9m95fw41b3GTrXV",
-				"https://ipfs.greyh.at/ipfs/QmQECm1yUgKh7oQg2syCFo5BLvhFSSH9m95fw41b3GTrXV",
-			},
-		},
-		{
-			Height:      582680,
-			Hash:        newHashFromStr("000000000000000001b4b8e36aec7d4f9671a47872cb9a74dc16ca398c7dcc18"),
-			UtxoSetHash: newHashFromStr("2406189cf8e15140c2004d4e9aa012711f48183689a305223c9bafdd3af8887e"),
-			UtxoSetSize: 3178882199,
-			UtxoSetSources: []string{
-				"http://localhost:8080/ipfs/QmXkBQJrMKkCKNbwv4m5xtnqwU9Sq7kucPigvZW8mWxcrv",
-				"https://ipfs.greyh.at/ipfs/QmXkBQJrMKkCKNbwv4m5xtnqwU9Sq7kucPigvZW8mWxcrv",
-			},
-		},
+
 	},
 
 	// Consensus rule change deployments.
@@ -436,13 +394,13 @@ var RegressionNetParams = Params{
 var TestNet3Params = Params{
 	Name:        "testnet3",
 	Net:         wire.TestNet3,
-	DefaultPort: "18333",
+	DefaultPort: "18453",
 	DNSSeeds: []DNSSeed{
-		{"testnet-seed.bitcoinabc.org", true},
-		{"testnet-seed-abc.bitcoinforks.org", true},
-		{"testnet-seed.bitprim.org", true},
-		{"testnet-seed.deadalnix.me", true},
-		{"testnet-seeder.criptolayer.net", true},
+	//	{"testnet-seed.bitcoinabc.org", true},
+	//	{"testnet-seed-abc.bitcoinforks.org", true},
+	//	{"testnet-seed.bitprim.org", true},
+	//	{"testnet-seed.deadalnix.me", true},
+	//	{"testnet-seeder.criptolayer.net", true},
 	},
 
 	// Chain parameters

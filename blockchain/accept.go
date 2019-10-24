@@ -7,8 +7,8 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchutil"
 )
 
 // maybeAcceptBlock potentially accepts a block into the block chain and, if

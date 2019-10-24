@@ -14,8 +14,8 @@ import (
 	"runtime"
 	"time"
 
-	rpc "github.com/gcash/bchd/rpcclient"
-	"github.com/gcash/bchutil"
+	rpc "github.com/mwanon/bchd/rpcclient"
+	"github.com/mwanon/bchutil"
 )
 
 // nodeConfig contains all the args, and data required to launch a bchd process

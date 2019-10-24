@@ -7,8 +7,8 @@ package chaincfg
 import (
 	"time"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

@@ -71,7 +71,7 @@ and we prefer to keep the daemon itself as lightweight as possible.
    boostrap.dat:<br /><br />
 **Windows:**
 ```bat
-C:\> "%PROGRAMFILES%\gcash\bchd\addblock" -i C:\Path\To\bootstrap.dat
+C:\> "%PROGRAMFILES%\mwanon\bchd\addblock" -i C:\Path\To\bootstrap.dat
 ```
 **Linux/Unix/BSD/POSIX:**
 ```bash

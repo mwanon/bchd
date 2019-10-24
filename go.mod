@@ -1,4 +1,4 @@
-module github.com/gcash/bchd
+module github.com/mwanon/bchd
 
 go 1.12
 
@@ -11,8 +11,8 @@ require (
 	github.com/davecgh/go-spew v1.1.0
 	github.com/dchest/siphash v1.2.1
 	github.com/fsnotify/fsnotify v1.4.7 // indirect
-	github.com/gcash/bchlog v0.0.0-20180913005452-b4f036f92fa6
-	github.com/gcash/bchutil v0.0.0-20190625002603-800e62fe9aff
+	github.com/mwanon/bchlog v0.0.0-20180913005452-b4f036f92fa6
+	github.com/mwanon/bchutil v0.0.0-20190625002603-800e62fe9aff
 	github.com/golang/protobuf v1.3.1
 	github.com/gorilla/websocket v1.4.0 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect

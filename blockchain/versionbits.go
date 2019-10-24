@@ -7,7 +7,7 @@ package blockchain
 import (
 	"math"
 
-	"github.com/gcash/bchd/chaincfg"
+	"github.com/mwanon/bchd/chaincfg"
 )
 
 const (

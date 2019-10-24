@@ -1,9 +1,9 @@
 mempool
 =======
 
-[![Build Status](https://travis-ci.org/gcash/bchd.png?branch=master)](https://travis-ci.org/gcash/bchd)
+[![Build Status](https://travis-ci.org/mwanon/bchd.png?branch=master)](https://travis-ci.org/mwanon/bchd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/gcash/bchd/mempool)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/mwanon/bchd/mempool)
 
 Package mempool provides a policy-enforced pool of unmined bitcoin transactions.
 
@@ -74,7 +74,7 @@ be an exhaustive list.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/gcash/bchd/mempool
+$ go get -u github.com/mwanon/bchd/mempool
 ```
 
 ## License

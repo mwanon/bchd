@@ -96,7 +96,7 @@ func upgradeDBPaths() error {
 	// respective networks.  Check for the old database and update it to the
 	// new path introduced with version 0.2.0 accordingly.
 	oldDbRoot := filepath.Join(oldBchdHomeDir(), "db")
-	upgradeDBPathNet(filepath.Join(oldDbRoot, "bchd.db"), "mainnet")
+	upgradeDBPathNet(filepath.Join(oldDbRoot, "rvmd.db"), "mainnet")
 	upgradeDBPathNet(filepath.Join(oldDbRoot, "bchd_testnet.db"), "testnet")
 	upgradeDBPathNet(filepath.Join(oldDbRoot, "bchd_regtest.db"), "regtest")
 

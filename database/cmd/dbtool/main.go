@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchlog"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchlog"
 	flags "github.com/jessevdk/go-flags"
 )
 

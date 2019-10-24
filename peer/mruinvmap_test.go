@@ -7,8 +7,8 @@ package peer
 import (
 	"crypto/rand"
 	"fmt"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/wire"
 	"testing"
 )
 

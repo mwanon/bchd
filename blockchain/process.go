@@ -7,9 +7,9 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchutil"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/database"
+	"github.com/mwanon/bchutil"
 )
 
 // BehaviorFlags is a bitmask defining tweaks to the normal behavior when

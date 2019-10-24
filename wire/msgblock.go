@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/mwanon/bchd/chaincfg/chainhash"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array
